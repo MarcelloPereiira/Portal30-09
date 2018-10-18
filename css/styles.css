@@ -1,0 +1,123 @@
+body {
+
+	text-align:center;
+	background-color: white;
+}
+#site {
+
+text-align:left;
+background-color: white;
+margin-left: auto;
+margin-right: auto;
+
+height: 850px;
+width: 820px;
+border:  ;
+position:relative;
+
+	}
+#busca {
+	
+	height: 138px;
+	width: 204px;
+	float: right;
+	left: 670px;
+	margin-top: 20px;
+	font-family: arial;
+}
+
+#banner {
+margin: 10px;
+height: 150px;
+width: 820px;
+border: 3px solid gray;
+}
+#banner h1{
+	margin: 10px;
+	padding: 40px;
+	color: #de5347;
+	font-family: Arial;
+}
+
+
+#conteudo {
+
+margin: 10px;
+min-height: 630px;
+width: 580px;
+border: 3px solid gray;
+float: left;
+}
+#conteudo h1{
+	font-family: Arial;
+	margin: 10px;
+	padding: 20px;
+	margin-top: 12px;
+	color: #de5347;
+}
+.tex1{
+	font-family: Arial;
+	font-weight: bold;
+	color: #ffcc69;
+	margin-left: 30px;
+	margin-top: -10px;
+}
+#conteudo h2{
+	font-family: Arial;
+	color: #de5347;
+	margin-left: 30px;
+}
+#conteudo p{
+	margin-left: 30px;
+	font-family: Arial;
+}
+.tex2{
+	font-family: Arial;
+	font-weight: bold;
+	color: #ffcc69;
+	margin-left: 30px;
+	
+}
+.linha1{ 
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: solid; 
+}
+#arearestrita {
+	
+margin:10px;
+height: 200px;
+width: 204px;
+border: 3px solid gray;
+margin-top: 10px;
+float: right;
+margin-right: -14px;
+}
+#arearestrita form{
+	margin:10px;
+	font-family: Arial;
+}
+.ar{
+	margin:10px;
+	margin-top: 20px;
+	font-family: Arial ;
+	
+}
+.p{
+	color: #333;
+
+}
+h1{
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+
+}
+h4{
+	margin-top: 0;
+	padding-left: 125px;
+	color: #333;
+}
+h3{
+	color:#333;
+	padding-left: 30px;
+}
