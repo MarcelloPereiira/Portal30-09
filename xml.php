@@ -1,4 +1,12 @@
 <?php 
+	//$xml = simplexml_load_file("feed.xml");
+	//echo "Cidade".$xml->nome;
+	//Pegar XML dentro do próprio sistema
+
+	//Pegar XML fora do sistema
+	//$xml = simplexml_load_string(data);
+	
+
 require "conexao.php";
 	function array_to_xml($data, &$xml_data) {
 		foreach ($data as $key => $value) {
@@ -17,7 +25,7 @@ require "conexao.php";
 		}
 	}
 
-$sql = $pdo->query("SELECT MACHETE_NOT,RESUMO_NOT,TEXTO_NOT FROM noticias");
+$sql = $pdo->query("SELECT * FROM noticias");
 if ($sql->rowCount() > 0) {
 	$data = $sql->fetchAll(PDO::FETCH_ASSOC);
 }
