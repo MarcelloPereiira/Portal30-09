@@ -26,7 +26,9 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `noticias`
 --
 
-CREATE TABLE IF NOT EXISTS `noticias` (
+DROP TABLE IF EXISTS `noticias`;
+
+CREATE TABLE `noticias` (
   `COD_NOT` int(5) NOT NULL AUTO_INCREMENT,
   `MACHETE_NOT` varchar(30) NOT NULL,
   `RESUMO_NOT` varchar(50) NOT NULL,
@@ -34,13 +36,25 @@ CREATE TABLE IF NOT EXISTS `noticias` (
   PRIMARY KEY (`COD_NOT`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+INSERT INTO `noticias` (`MACHETE_NOT`, `RESUMO_NOT`, `TEXTO_NOT`) VALUES
+('Tudo Sobre Futebol', 'Fifa 2018', 'A Fifa escolheu Wilton Pereira Sampaio para representar a Conmebol no torneio. O árbitro terá a companhia dos auxiliares Bruno Boschilia e Rodrigo Figueiredo. O argentino Mauro Vigliano vai ser o responsável pelo árbitro de vídeo.');
+
+INSERT INTO `noticias` (`MACHETE_NOT`, `RESUMO_NOT`, `TEXTO_NOT`) VALUES
+('Mundial de Clubes', 'Palmeira não tem mundial', 'A Fifa escolheu Wilton Pereira Sampaio para representar a Conmebol no torneio. O árbitro terá a companhia dos auxiliares Bruno Boschilia e Rodrigo Figueiredo. O argentino Mauro Vigliano vai ser o responsável pelo árbitro de vídeo.');
+
+INSERT INTO `noticias` (`MACHETE_NOT`, `RESUMO_NOT`, `TEXTO_NOT`) VALUES
+('Palmeira não tem mundial', 'Mundial de Clubes', 'A Fifa escolheu Wilton Pereira Sampaio para representar a Conmebol no torneio. O árbitro terá a companhia dos auxiliares Bruno Boschilia e Rodrigo Figueiredo. O argentino Mauro Vigliano vai ser o responsável pelo árbitro de vídeo.');
+
+
 -- --------------------------------------------------------
 
 --
 -- Estrutura da tabela `usuarios`
 --
 
-CREATE TABLE IF NOT EXISTS `usuarios` (
+DROP TABLE IF EXISTS `usuarios`;
+
+CREATE TABLE `usuarios` (
   `COD_USER` int(5) NOT NULL AUTO_INCREMENT,
   `NOME_USER` varchar(30) NOT NULL,
   `LOGIN_USER` varchar(10) NOT NULL,

@@ -29,6 +29,9 @@ $sql = $pdo->query("SELECT * FROM noticias");
 if ($sql->rowCount() > 0) {
 	$data = $sql->fetchAll(PDO::FETCH_ASSOC);
 }
+else{
+	exit;
+}
 
 $xml_data = new SimpleXMLElement('<data/>');
 
